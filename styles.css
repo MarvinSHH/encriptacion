@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-family: "Courier New", Courier, monospace;
+}
+h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.name {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+/* Contenedor principal para los formularios */
+.form-container {
+  display: flex;
+  flex-direction: column; /* Se colocan uno encima del otro por defecto */
+  gap: 30px; /* Espacio entre los formularios */
+  width: 100%;
+  max-width: 900px; /* Ajusta el ancho máximo */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Espaciado en secciones */
+section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #f3f9f9;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #394752;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #394752aa;
+}
+
+#error-output {
+  color: red;
+  font-weight: bold;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+  .form-container {
+    flex-direction: row; /* Coloca los formularios uno al lado del otro en pantallas grandes */
+    justify-content: space-between; /* Espacio entre los formularios */
+  }
+
+  .container {
+    max-width: 48%; /* Ocupa el 48% del ancho en pantallas grandes */
+  }
+}
